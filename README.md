@@ -67,6 +67,8 @@ user-friendly experience for optimized learning.
   }
 }
 ```
+This is an example file. you can remove/add more subjects following the format above.
+
 `"This field will be the title of the combobox items": {}` this field will be the title of the combobox items.
 
 `homework.prompt` the prompt to generate homework.
