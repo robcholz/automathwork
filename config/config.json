@@ -2,5 +2,5 @@
   "gpt3.5-turbo.key": "xxxxxxxx",
   "proxy.address": "127.0.0.1",
   "proxy.port": "7890",
-  "subject.default": "AP Mechanics"
+  "subject.default": "AP Physics C: Electricity and Magnetism"
 }
