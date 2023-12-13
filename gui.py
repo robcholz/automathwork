@@ -142,13 +142,13 @@ class AppWindow(PyQt5.QtWidgets.QWidget):
         self.rerender_html()
 
     def rerender_html(self):
-        self.utils.get_html(self.current_md, 'cache.html')
+        self.utils.get_html(self.current_md, os.path.join(self.settings.config_path, 'cache.html'))
         self.html_renderer.reload()
 
     def render_html(self):
-        self.utils.get_html(self.current_md, 'cache.html')
+        self.utils.get_html(self.current_md, os.path.join(self.settings.config_path, 'cache.html'))
         self.html_renderer.load(QUrl.fromLocalFile(
-            os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cache.html')))
+            os.path.join(self.settings.config_path, 'cache.html')))
 
     def save_new_markdown(self):
         filename = os.path.join('saves', datetime.datetime.now().strftime("%d-%m-%Y-%H:%M:%S"))
@@ -220,7 +220,7 @@ class AppWindow(PyQt5.QtWidgets.QWidget):
 
     def export_to_pdf(self):
         self.web_engine_page.load(QUrl.fromLocalFile(
-            os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cache.html')))
+            os.path.join(self.settings.config_path, 'cache.html')))
 
     def log_info(self, info):
         self.info_widget.append(info + "\n")
@@ -230,14 +230,3 @@ class AppWindow(PyQt5.QtWidgets.QWidget):
 
     def exec(self):
         self.application.exec()
-
-
-if __name__ == "__main__":
-    app = QApplication([])
-    window = QMainWindow()
-    html_renderer = PyQt5.QtWebEngineWidgets.QWebEngineView()
-    html_renderer.load(QUrl.fromLocalFile(
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cache.html')))
-    window.setCentralWidget(html_renderer)
-    window.show()
-    app.exec()
