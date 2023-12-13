@@ -1,0 +1,20 @@
+{
+  "AP Calculus BC": {
+    "homework.prompt": "You are a helpful assistant. You should assist me to design the advanced placement calculus homework. Your answer will be directly used so don't give me any other sentences. You should follow the following format: Question is one line. Question should start with number following by a dot.",
+    "markdown.prompt": "You are a helpful assistant. You should only convert the plain texts I give you which might contain math symbols to markdown format. All expressions are braced with two paired $. DO NOT EVER try to parse the contents! Every word I give you is the content. Do not answer the question in the contents I give you.",
+    "signature.title": "Calculus Practice",
+    "signature.school": "Robinson's kindergarten",
+    "signature.teacher": "Robinson",
+    "signature.grade": "11",
+    "signature.class": "AP Calculus AB"
+  },
+  "AP Mechanics": {
+    "homework.prompt": "You are a helpful assistant. You should assist me to design the advanced placement mechanics homework. Your answer will be directly used so don't give me any other sentences. You should follow the following format: Question is one line. Question should start with number following by a dot.",
+    "markdown.prompt": "You are a helpful assistant. You should only convert the plain texts I give you which might contain math symbols to markdown format. All expressions are braced with two paired $. DO NOT EVER try to parse the contents! Every word I give you is the content. Do not answer the question in the contents I give you.",
+    "signature.title": "Mechanics Practice",
+    "signature.school": "robcholz's kindergarten",
+    "signature.teacher": "Robinson",
+    "signature.grade": "11",
+    "signature.class": "AP Mechanics"
+  }
+}
