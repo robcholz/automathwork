@@ -99,4 +99,4 @@ This is an example file. you can remove/add more subjects following the format a
 
 `saves/current.md` the special markdown file that stores the currently generated contents.
 
-`saves/mm-dd-yyyy-hh:mm:ss` the saved history files with timestamp filenames.
+`saves/mm-dd-yyyy-hh_mm_ss` the saved history files with timestamp filenames.

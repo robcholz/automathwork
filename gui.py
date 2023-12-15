@@ -151,7 +151,7 @@ class AppWindow(PyQt5.QtWidgets.QWidget):
             os.path.join(self.settings.config_path, 'cache.html')))
 
     def save_new_markdown(self):
-        filename = os.path.join('saves', datetime.datetime.now().strftime("%d-%m-%Y-%H:%M:%S"))
+        filename = os.path.join('saves', datetime.datetime.now().strftime("%d-%m-%Y-%H_%M_%S"))
         utils.write_cache(filename, utils.read_cache(os.path.join('saves', 'current.md')))
         self.log_info("file history {} saved".format(filename))
         self.index_markdowns()
@@ -177,9 +177,9 @@ class AppWindow(PyQt5.QtWidgets.QWidget):
             day = int(date_time_parts[0])
             month = int(date_time_parts[1])
             year = int(date_time_parts[2])
-            hour = int(date_time_parts[3].split(":")[0])
-            minute = int(date_time_parts[3].split(":")[1])
-            second = int(date_time_parts[3].split(":")[2])
+            hour = int(date_time_parts[3].split("_")[0])
+            minute = int(date_time_parts[3].split("_")[1])
+            second = int(date_time_parts[3].split("_")[2])
 
             dt = datetime.datetime(year, month, day, hour, minute, second)
             return (dt - datetime.datetime(dt.year, 1, 1)).total_seconds()

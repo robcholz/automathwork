@@ -14,7 +14,7 @@ class Settings:
     def __init__(self):
         self.pandoc_path: str
         self.config_path: str
-        parser = argparse.ArgumentParser(description="划水专用commandline tool")
+        parser = argparse.ArgumentParser(description="Water Water WWW.. commandline")
         parser.add_argument("-c", "--config", type=str, help="json configuration directory")
         args = parser.parse_args()
         self.config_path = args.config
