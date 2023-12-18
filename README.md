@@ -6,6 +6,8 @@ educators and students alike can easily generate comprehensive and customized as
 Whether it's for test preparation or reinforcing subject knowledge, automathwork software provides a seamless and
 user-friendly experience for optimized learning.
 
+![](docs/github/example_screenshot.png)
+
 ## Install
 
 ### Windows
